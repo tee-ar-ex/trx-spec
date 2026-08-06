@@ -30,12 +30,11 @@ Only (or mostly) for use-readability, read-time checks and broader compatibility
 
 # offsets.uint64
 - Should always be a uint32/64
-- Where is the first vertex of each streamline, start at 0
+- Where is the first vertex of each streamline, starts at 0
 - Two ways of knowing how many vertices there are:
     - Check the header
     - Positions array size / dtypes / 3
-
-- To get streamlines lengths: append the total number of vertices to the end of offsets and to the differences between consecutive elements of the array(ediff1d in numpy).
+- Includes a final sentinel value equal to `NB_VERTICES`, so that all streamlines lengths can be calculated as the differences between consecutive elements of the array(ediff1d in numpy).
 
 # dpv (data_per_vertex)
 - Always of size (NB_VERTICES, 1) or (NB_VERTICES, N)
@@ -141,7 +140,7 @@ save(sub_trx, 'random_1000.trx')
 # Get sub-groups only, from the random subset
 for key in sub_trx.groups.keys():
     group_trx = sub_trx.get_group(key)
-    save(group_trx, '{}.trx'.format(key)) 
+    save(group_trx, '{}.trx'.format(key))
 
 # Pre-allocate memmaps and append 100x the random subset
 alloc_trx = TrxFile(nb_streamlines=1500000, nb_vertices=500000000, init_as=trx)
