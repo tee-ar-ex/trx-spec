@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /
+---
 
 # Generals
 - (Un)-Compressed Zip File or simple folder architecture
