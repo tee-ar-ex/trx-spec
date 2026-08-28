@@ -5,10 +5,10 @@ the structure of a TRX file and its components.
 
 # Generals
 - (Un)-Compressed Zip File or simple folder architecture
-    - File architecture describe the data
+    - File architecture describes the data
     - Each file basename is the metadata’s name
     - Each file extension is the metadata’s dtype
-    - Each file dimension is in the value between basename and metdata,  1-dimension array do not have to follow this convention for readability
+    - Each file dimension is in the value between basename and metadata,  1-dimension array do not have to follow this convention for readability
 - All arrays have a C-style memory layout(row-major)
 - All arrays have a little-endian byte order
 - Compression is optional
