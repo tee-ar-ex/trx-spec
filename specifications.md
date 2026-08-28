@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /
+---
+
 # Preliminaries
 
 This document is the specification for the TRX file format. It describes
