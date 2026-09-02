@@ -8,7 +8,7 @@ permalink: /
 This document is the specification for the TRX file format. It describes
 the structure of a TRX file and its components.
 
-# Generals
+# General structure
 - (Un)-Compressed Zip File or simple folder architecture
     - File architecture describes the data
     - Each file basename is the metadata’s name
