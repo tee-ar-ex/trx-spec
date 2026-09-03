@@ -6,7 +6,9 @@ permalink: /
 # Preliminaries
 
 This document is the specification for the TRX file format. It describes
-the structure of a TRX file and its components.
+the structure of a TRX file and its components. For documentation of TRX,
+including specific language implementations and example usage, please
+visit the [TRX main webpage](https://tee-ar-ex.github.io)
 
 # General structure
 - (Un)-Compressed Zip File or simple folder architecture
